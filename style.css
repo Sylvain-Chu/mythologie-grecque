@@ -1,0 +1,882 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+section{
+    width: 100%;
+}
+/* ---------------------- HEADER ---------------------- */
+
+header{
+    height: auto;
+    background-size: cover;
+}
+
+#icon{
+    width: 50px;
+    height: 50px;
+}
+
+.italique{
+    font-style: italic;
+}
+
+ul.submenu li a img{
+    height: 80px;
+    width: auto;
+    
+}
+
+
+/* ---------------------- NAV BAR ---------------------- */
+nav{
+    width: 100%;
+}
+
+nav ul{
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    list-style-type: none;
+}
+
+nav ul li {
+    float: left;
+    position: relative;
+}
+
+nav ul::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.submenu{
+    display: none;
+    z-index: 9999;
+}
+
+nav input[type=checkbox]{
+    display: none;
+}
+
+nav label{
+    display: none;
+}
+
+nav a{
+    display: inline-block;
+}
+
+nav ul li a{
+    padding: 20px 30px;
+}
+
+a.logo{
+    padding: 0;
+}
+
+nav ul li:hover a{
+    padding: 5px 30px 5px 30px;
+}
+
+nav li:hover .submenu {
+    border-bottom: 1px solid rgba(151, 150, 150, 0.582);;
+    display: inline-block;
+    position: absolute;
+    top: 100%;
+    left: 0px;
+}
+
+.submenu li a{
+    padding: 15px 25px;
+    font-size: 15px;
+    width: 370px;
+}
+
+.submenu li{
+    border-bottom: 1px solid rgba(170, 170, 170, 0.582);
+    background-color: rgba(228, 228, 228, 0.794);
+}
+
+.menu-accueil,
+.menu-dieux,
+.menu-mythologie,
+.menu-bestiaire,
+.menu-mythesLegendes,
+.menu-genealogie{
+    height: 81px;
+    line-height: 40px;
+}
+
+.menu-logo:hover,
+.menu-accueil:hover,
+.menu-dieux:hover,
+.menu-mythologie:hover,
+.menu-bestiaire:hover,
+.menu-mythesLegendes:hover,
+.menu-genealogie:hover{
+    border-top: 1px solid #797979;
+    background-color: rgba(192, 192, 192, 0.15);
+}
+
+.submenu li:hover a{
+    color: black;
+    font-weight: bold;
+}
+.menu-logo img{
+    width: 30px;
+	height: 36px;
+}
+
+.menu-logo{
+    float: left;
+}
+.millieu{
+    position: relative;
+    top: 0px;
+    left: 20%;
+}
+.ResultatRecherche,
+.menu-barreRecherche{
+    float: right;
+    margin-right: 50px;
+}
+.ResultatRecherche{
+    background-color: white;
+    z-index: 9999;
+    max-height: 10%;
+}
+/* ----------------------  ACCUEIL  ---------------------- */
+.sliderAccueil {
+	min-height: 100vh;
+    border-bottom: solid 10px rgba(36, 35, 35, 0.5);
+    font-weight: bold;
+    padding: 50px;
+    text-align: center;
+    filter: grayscale(100%);
+    background-color: rgba(3, 3, 3, 0.411);
+    max-width: 100%;
+}
+.sliderAccueil:hover{
+    filter: grayscale(0%);
+}
+.sliderAccueil p{
+    font-size: large;
+    text-align: justify;
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    color: white;
+}
+
+.sliderAccueil h2{
+    color: white;
+    margin-top: 20px;
+}
+.sliderAccueil .contenu h1{
+    color: white;
+}
+.sliderAccueil:nth-child(1) {
+	background: white url("img/pexels-boris-ulzibat-3610377.jpg") center center no-repeat;
+	background-size: cover;
+    background-attachment: fixed;
+    color: white;
+}
+
+.sliderAccueil:nth-child(2) {
+	background: white url("img/goodness-2258249_1280.jpg") center center no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+    color: black ;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+#debut h1{
+    position:absolute;
+    left: 50%;
+    top: 50%;
+    width: 200px;
+    height: 200px;
+    margin-left: -100px; 
+    margin-top: -100px; 
+    color: black;
+    font-family: "Ma Super Fonte";
+    font-size: 50px;
+    display: inline;
+}
+
+.sliderAccueil h1{
+    color: black;
+    font-family: "Ma Super Fonte";
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+
+#sliderAccueil h2{
+    margin-top: 15px;
+    font-family: "Ma Super Fonte";
+}
+
+@font-face {
+	font-family: "Ma Super Fonte";
+	src: url('HaginCapsMedium-Medium.ttf');
+}
+
+#champRecherche{
+    height: 20px;
+    padding:5px;
+    margin-right: 10px;
+}
+.recherche{
+    max-width: auto;
+    height: 81px;
+    display: flex;
+    align-items: center;
+}
+
+#BtnRecherche{
+    border: 0;
+    background-color: #394657;
+    padding: .5rem;
+    color: white;
+    margin: 1rem 0;
+    width: auto;
+    text-transform:uppercase;
+}
+
+#BtnRecherche:hover{
+    background-color: #31598f;
+    cursor: pointer;
+}
+
+
+.ResultatRecherche{
+    height: 81px;
+    line-height: 40px;
+    margin-left: 50px;
+}
+.ResultatRecherche a:hover{
+    border-top: 1px solid #797979;
+    background-color: rgba(192, 192, 192, 0.15);
+}
+/* ----------------------  DIEUX  ---------------------- */
+
+.slider{
+	height: 100vh;
+    border-bottom: solid 10px rgba(36, 35, 35, 0.5);
+    font-weight: bold;
+    padding: 50px;
+    text-align: center;
+    filter: grayscale(100%);
+}
+.slider:hover {
+    filter: grayscale(0%);
+}
+
+.contenu{
+    background-color: rgba(119, 119, 119, 0.411);
+    font-size: large;
+    text-align: justify;
+    width: 750px;
+    margin: auto;
+    text-align: center;
+    border-radius: 10px;
+    padding: 40px 20px 40px 20px;
+}
+
+.contenu:hover{
+    background-color: rgba(35, 35, 35, 0.692);
+}
+
+.slider:nth-child(1) {
+	background: white url("img/bg_slider_explication.jpg") center center no-repeat;
+	background-size: cover;
+    background-attachment: fixed;
+    color: white;
+}
+
+
+.slider:nth-child(2) {
+	background: white url("img/bg_slider_zeus.jpg") center center no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+    color: deepskyblue ;
+}
+
+.slider:nth-child(3) {
+	background: white url("img/bg_slider_poseidon.jpg") center center no-repeat;
+	background-size: cover;
+    background-attachment: fixed;
+    color: white ;
+}
+.slider:nth-child(4) {
+	background: white url("img/bg_slider_hera.jpg") center center no-repeat;
+	background-size: cover;
+    background-attachment: fixed;
+    transition: all 0.5s ease;
+    color: deepskyblue;
+}
+
+.slider:nth-child(5) {
+	background: white url("img/bg_slider_aphrodite.jpg") center center no-repeat;
+	background-size: cover;
+    background-attachment: fixed;
+    transition: all 0.5s ease;
+    color: white;
+}
+.slider:nth-child(6) {
+	background: white url("img/bg_slider_ares.jpg") center center no-repeat;
+	background-size: cover;
+    background-attachment: fixed;
+    transition: all 0.5s ease;
+    color: deepskyblue;
+}
+.slider:nth-child(7) {
+	background: white url("img/bg_slider_athena.jpg") center center no-repeat;
+	background-size: cover;
+    background-attachment: fixed;
+    transition: all 0.5s ease;
+    color: deepskyblue;
+}
+.slider:nth-child(8) {
+	background: white url("img/bg_slider_hephaistos.jpg") center center no-repeat;
+	background-size: cover;
+    background-attachment: fixed;
+    transition: all 0.5s ease;
+    color: orange ;
+}
+.slider:nth-child(9) {
+	background: white url("img/bg_slider_hestia.jpg") center center no-repeat;
+	background-size: cover;
+    background-attachment: fixed;
+    transition: all 0.5s ease;
+    color: white;
+}
+.slider:nth-child(10) {
+	background: white url("img/bg_slider_apollion.jpg") center center no-repeat;
+	background-size: cover;
+    background-attachment: fixed;
+    transition: all 0.5s ease;
+    color: deepskyblue ;
+}
+.slider:nth-child(11) {
+	background: white url("img/bg_slider_artemis.jpg") center center no-repeat;
+	background-size: cover;
+    background-attachment: fixed;
+    transition: all 0.5s ease;
+   
+    color: orange;
+}
+.slider:nth-child(12) {
+	background: white url("img/bg_slider_demeter.jpg") center center no-repeat;
+	background-size: cover;
+    background-attachment: fixed;
+    transition: all 0.5s ease;
+    color: deepskyblue;
+}
+.slider:nth-child(13) {
+	background: white url("img//bg_slider_hares.jpg") center center no-repeat;
+	background-size: cover;
+    background-attachment: fixed;
+    transition: all 0.5s ease;
+    color: deepskyblue;
+}
+.slider:nth-child(14) {
+	background: white url("img/bg_slider_hermes.jpg") center center no-repeat;
+	background-size: cover;
+    background-attachment: fixed;
+    transition: all 0.5s ease;
+    color: orange;
+}
+.slider:nth-child(15) {
+	background: white url("img/bg_slider_dionysos.jpg") center center no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    transition: all 0.5s ease;
+    color: yellow;
+}	
+
+p.miniimage{
+    text-align: center;
+}
+
+p.miniimage img{
+    height: 300px;
+    width: auto;
+}
+
+/*----------------------Mythes et Legendes------------------------------*/
+.slidermythe h1{
+    color: white;
+}
+.slidermythebis h1{
+    color: white;
+}
+.slidermytheUlysse h1{
+    color: white;
+}
+.slidermythe {
+	height: 115vh;
+    border-bottom: solid 10px rgba(36, 35, 35, 0.5);
+    font-weight: bold;
+    text-align: center;
+    padding: 50px;
+}
+
+.slidermythe p{
+    margin-left: 20%;
+    margin-right: 20%;
+    text-align: justify;
+    border-radius: 10px;
+    color: white;
+}
+
+
+.slidermythebis {                             
+	height: 200vh;
+    border-bottom: solid 10px rgba(36, 35, 35, 0.5);
+    font-weight: bold;
+    text-align: justify;
+    padding: 50px;
+}
+
+.slidermythebis p{                                    
+    background-color: rgba(80, 80, 80, 0.43);   
+    margin-left: 20%;
+    margin-right: 20%;
+    text-align: justify;
+    text-align: center;
+    color: white;
+    border-radius: 1%;
+}
+
+.slidermytheUlysse {
+	height: 325vh;
+    border-bottom: solid 10px rgba(36, 35, 35, 0.5);
+    font-weight: bold;
+    text-align: center;
+    padding: 50px;
+}
+
+.slidermytheUlysse p{
+    background-color: rgba(80, 80, 80, 0.43);   
+    margin-left: 20%;
+    margin-right: 20%;
+    text-align: justify;
+    text-align: center;
+    color: white;
+    border-radius: 1%;
+}
+
+
+.slidermythe:nth-child(1){
+    background: white url("img/enTete_mythesLegendes.png") center center no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.slidermythe:nth-child(2){
+    background: white url("img/promethee.jpg") center center no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.slidermythe:nth-child(3){
+    background: white url("img/oedipeEtSphinx.jpg") center center no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.slidermythe:nth-child(4){
+    background: white url("img/perseeEtMeduse.jpg") center center no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.slidermythe:nth-child(5){
+    background: white url("img/icare-et-dedale.jpg") center center no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.slidermythe:nth-child(6){
+    background: white url("img/pandore.jpg") center center no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.slidermythe:nth-child(7){
+    background: white url("img/jason.jpg") center center no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.slidermythe:nth-child(8){
+    background: white url("img/creation_du_monde.jpg") center center no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.slidermythe:nth-child(9){
+    background: white url("img/midas.jpg") center center no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.slidermythe:nth-child(10){
+    background: white url("img/oedipeEtSphinx.jpg") center center no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.slidermythe:nth-child(11){
+    background: white url("img/Trojan-Horse.jpg") center center no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.slidermythebis{
+    background: white url("img/bg_slider_heracles.jpg") center center no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.slidermytheUlysse{
+    background: white url("img/ulysse.jpg") center center no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.slidermytheUlysse p:hover{
+    background-color: rgba(35, 35, 35, 0.692);
+}
+.slidermythebis p:hover{
+    background-color: rgba(35, 35, 35, 0.692);
+}
+/* ----------------------- BESTIAIRE ---------------------*/
+.sliderbestiaire {
+	height: 100vh;
+    border-bottom: solid 10px rgba(36, 35, 35, 0.5);
+    font-weight: bold;
+    text-align: center;
+    padding: 50px;
+}
+
+.sliderbestiaire h1{
+    color: white;
+}
+.sliderbestiaire p{
+    border-radius: 10px;
+    margin-left: 20%;
+    margin-right: 20%;
+    text-align: justify;
+    text-align: center;
+    color: white;
+}
+
+
+.sliderbestiaire:nth-child(1){
+    background: white url("img/enTeteBestiaire.jpg") center center no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.sliderbestiaire:nth-child(2){
+    background: white url("img/fond_echidna.png") center center no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.sliderbestiaire:nth-child(3){
+    background: white url("img/fond_typhon.jpg") center center no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.sliderbestiaire:nth-child(4){
+    background: white url("img/fond_sphinx.jpg") center center no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.sliderbestiaire:nth-child(5){
+    background: white url("img/fond_hydre.jpg") center center no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.sliderbestiaire:nth-child(6){
+    background: white url("img/fond_chimere.png") center center no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.sliderbestiaire:nth-child(7){
+    background: white url("img/fond_minotaur.png") center center no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.sliderbestiaire:nth-child(8){
+    background: white url("img/fond_meduse.png") center center no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.sliderbestiaire:nth-child(9){
+    background: white url("img/fond_scylla-and-charybdis.jpg") center center no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.sliderbestiaire:nth-child(10){
+    background: white url("img/fond_lelaps-et-teumesse.png") center center no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.sliderbestiaire:nth-child(11){
+    background: white url("img/fond_ladon.jpg") center center no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.sliderbestiaire:nth-child(12){
+    background: white url("img/fond_dragon_de_colchide.jpeg") center center no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.sliderbestiaire:nth-child(13){
+    background: white url("img/fond_aigle.png") center center no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.sliderbestiaire:nth-child(14){
+    background: white url("img/fond_sanglier.png") center center no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+/* ----------------------- Genealogie ---------------------*/
+
+.telechargement{
+    padding: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+    width: fit-content;
+    height: 20px;
+    font-weight: bold;   
+    background-color: rgb(41, 41, 41);
+    border-radius: 10px;
+    border: 1px solid black;
+}
+
+.telechargement p{
+    text-align: center;
+}
+
+.telechargement p a{
+    text-align: justify;
+    text-align: center; 
+    text-transform: uppercase;
+    color: white;
+}
+
+.telechargement:hover p a{
+    cursor: pointer;
+    color: rgb(41, 41, 41);
+
+}
+.telechargement:hover{
+    border: 1px solid rgb(41, 41, 41);
+    background-color: rgb(255, 255, 255);
+}
+
+/* ----------------------- BOUTON ---------------------*/
+.button-haut {
+    position: fixed;
+    top: 90vh;
+    right: 3vh;
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    line-height: 40px;
+    background: rgba(194, 194, 194, 0.26);
+    border: black solid 1px;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.button-haut:hover {
+    background: rgba(73, 73, 73, 0.26);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* ---------------------- COMMENTAIRE ---------------------- */
+.commentaire{
+    background-color: rgba(155, 155, 155, 0.404);
+    padding: 10px;
+    margin: 5px auto;
+    width: 500px;
+    border-radius: 10px;
+}
+.com{
+    display: flex;
+    height: auto;
+    flex-direction: column-reverse;
+    margin-bottom: 10px;
+}
+#commentaires{
+    max-width: 500px;
+    margin: 2rem auto;
+    padding: 2rem;
+
+}
+#formCom{
+    display: block;
+    padding: 10px 0 5px;
+}
+#nom, #commentaire{
+    display: block;
+    padding: 5px;
+    width: 500px;
+    border: 2px solid rgb(163, 162, 162);
+}
+
+#pCom{
+    margin-top: 10px;
+}
+
+#boutonEnvoyer{
+    border: 0;
+    background-color: #394657;
+    padding: .5rem;
+    color: white;
+    margin: 1rem 0;
+    width: auto;
+    text-transform:uppercase;
+}
+
+#boutonEnvoyer:hover{
+    background-color: #31598f;
+    cursor: pointer;
+}
+/* ---------------------- FOOTER ---------------------- */
+footer{
+	display: flex;
+    border-top: 1px solid gray;
+}
+
+.colonneune {
+	display: flex;
+	flex-direction: column;
+	width: 50%;
+    padding-left: 3%;
+    padding-top: 25px;
+}
+
+.colonneune > p {
+	margin: 10px 10px 10px 10px;
+}
+
+.colonnedeux {
+	display: flex;
+	justify-content: space-around;
+    width: 50%;
+    justify-content: center;
+    padding-top: 25px;
+}
+
+.lignequatre > div > p > a {
+	text-decoration: none;
+  	color: black
+}
+.logo{
+    padding: 5px 10px 0px 0px;
+}
+.ligne,.lignequatre{
+    display: flex;
+}
+.blockunligneun > ul > li > a {
+	text-decoration: none;
+    color: black;
+    margin-top: 5px;
+  	list-style:none;
+}
+.blockunligneun > ul > li  {
+	list-style:none;
+}
+
+.blockunligneun > ul > li > a:hover{
+	text-decoration: underline;
+}
+
+.blockdeuxligneun{
+    margin-top: 10px;
+}
+.border {
+	border: 1px solid grey;
+	height: 30vh;
+	display: flex;
+	align-self: center;
+}
+
+/* ---------------------- RESPONSIVE ---------------------- */
+nav input[type=checkbox]:checked ~ ul{
+    display: block;
+}
+
+@media screen and (max-width:830px){
+    .menuRes{
+        display: block;
+        color: white;
+        background-color: rgb(54, 54, 54);
+        text-align: center;
+        padding: 12px 0px;
+    }
+    nav ul{
+        display: none;
+    }
+    nav ul li, nav ul li a{
+        width: 100%;
+        text-align: center;
+    }
+    nav ul li a, nav ul li:hover a {
+        padding: 10px;
+    }
+    nav li:hover .submenu{
+        display: block;
+        position: static;
+    }
+
+    .submenu li:hover a{
+        z-index: 9999;
+    }
+    .sliderAccueil{
+        max-width: 100%;
+    }
+}
